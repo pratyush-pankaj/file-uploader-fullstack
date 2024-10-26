@@ -25,9 +25,9 @@ For this file uploader application, you’ll need two main collections in MongoD
 ```json
 {
     "_id": ObjectId,
-    "name": String,          // User's full name
-    "email": String,         // User's unique email address
-    "password": String       // Hashed password
+    "name": String,
+    "email": String,
+    "password": String
 }
 ```
 
@@ -36,10 +36,10 @@ For this file uploader application, you’ll need two main collections in MongoD
 ```json
 {
     "_id": ObjectId,
-    "name": String,               // Name of the file or folder
-    "type": String,               // "file" or "folder"
-    "parent": ObjectId,           // ID of the parent folder (null if in the root directory)
-    "path": String,               // File path for easy access
-    "owner": ObjectId             // Reference to the user who owns this file/folder
+    "name": String,
+    "type": String,
+    "parent": ObjectId,
+    "path": String,
+    "owner": ObjectId
 }
 ```
